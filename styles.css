@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    direction: rtl;
+    overflow: hidden;
+}
+
+.game-title {
+    font-size: 4vw; /* Responsive font size */
+    text-shadow: 2px 2px #000;
+    margin-top: 2vh;
+}
+
+.score-container {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 1vh 2vw;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: black;
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 2vh 2vw;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    max-width: 1200px;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.word-display {
+    font-size: 3vw; /* Responsive font size */
+    margin-bottom: 2vh;
+}
+
+.input-container {
+    margin-bottom: 2vh;
+}
+
+#guessInput {
+    padding: 1vh;
+    font-size: 2vw;
+    width: 10vw;
+    text-align: center;
+    margin-left: 1vw;
+}
+
+button {
+    padding: 1vh 2vw;
+    font-size: 2vw;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+.message {
+    margin-bottom: 2vh;
+    font-size: 2.5vw; /* Responsive font size */
+}
+
+.category-display {
+    font-size: 2.5vw; /* Responsive font size */
+    margin-bottom: 2vh;
+}
+
+.letters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2vh;
+    flex-basis: 100%;
+}
+
+.letter {
+    background-color: #add8e6;
+    padding: 1vh;
+    margin: 0.5vw;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 5vw;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.letter.correct {
+    background-color: #c8e6c9;
+}
+
+.letter.incorrect {
+    background-color: #ffcdd2;
+}
+
+.letter.helped {
+    background-color: #ffeb3b;
+}
+
+.letter:nth-child(6n+1) {
+    clear: both;
+}
+
+.animation-container {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+}
+
+#hangman {
+    width: 15vw;
+    height: auto;
+}
